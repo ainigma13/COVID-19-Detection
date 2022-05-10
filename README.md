@@ -52,3 +52,4 @@ Change the image to numpy array.
 iii.Label prediction:
 Predict the label for the new image by passing it to previously evaluated model.
 Display the new image and its predicted label. (cv2.imshow())
+
