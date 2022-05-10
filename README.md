@@ -1,6 +1,8 @@
 # COVID-19-Detection
 A Python GUI application based on Tkinter  to detect COVID-19 from normal people using chest X-ray images
 
+![Diagnosis of COVID-19 from chest X-ray](https://github.com/ainigma13/COVID-19-Detection/blob/main/pic/3.png)
+
 1."train_covid19.py"
 
 Purpose:To use tranfer learning method to solve binary classification problem of classifying chest X-ray images as COVID-19 or normal.
