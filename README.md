@@ -11,19 +11,19 @@ Purpose:To use tranfer learning method to solve binary classification problem of
 CODE description and usage:
 
 i.Load dataset:
-Run the python program in terminal and pass the dataset as command line argument (python train_covid19.py --dataset dataset).
+Run the python program in terminal and pass the dataset as command line argument (*python train_covid19.py --dataset dataset*).
 
 ii.Pre-processing:
-Read the images in dataset (cv2.imread()).
-Swap color channels of images (cv2.COLOR_BGR2RGB)
-Resize the images to 224x224 pixels (cv2.resize)
-Perform one-hot encoding on the labels.(LabelBinarizer())
+Read the images in dataset (*cv2.imread()*).
+Swap color channels of images (*cv2.COLOR_BGR2RGB*)
+Resize the images to 224x224 pixels (*cv2.resize*)
+Perform one-hot encoding on the labels.(*LabelBinarizer()*)
 Store the images and labels in numpy arrays.
 
 iii.Model architecture:
 Define hyperparameters- learning rate, batch size, and number of epochs.
-Partition the dataset into training and testing sets.(train_test_split())
-Load the VGG16 as base model with weights pre-trained on ImageNet and excluding the ImageNet classifier on top
+Partition the dataset into training and testing sets.(*train_test_split()*)
+Load the **VGG16** as base model with weights pre-trained on ImageNet and excluding the ImageNet classifier on top
 Construct the new model to be placed on top of base model.
 Freeze the base model inorder to stop updating the layers in base model during the process of training.
 
@@ -44,16 +44,16 @@ Purpose:To develope a GUI that will use the trained model to predict a new chest
 CODE description and usage:
 
 i.Image selection:
-Run the python program in terminal and pass the previously saved model as a command line argument (python gui_covid19.py --model covid19.model)
-Press the “Load ” button in the GUI to browse for the location of new chest X-ray image we want to predict.
+Run the python program in terminal and pass the previously saved model as a command line argument (*python gui_covid19.py --model covid19.model*)
+Press the *Load* button in the GUI to browse for the location of new chest X-ray image we want to predict.
 
 ii.Pre-processing:
-Read the image from its path location (cv2.imread()).
-Swap color channels of images (cv2.COLOR_BGR2RGB)
-Resize the images to 224x224 pixels (cv2.resize)
+Read the image from its path location (*cv2.imread()*).
+Swap color channels of images (*cv2.COLOR_BGR2RGB*)
+Resize the images to 224x224 pixels (*cv2.resize*)
 Change the image to numpy array.
 
 iii.Label prediction:
 Predict the label for the new image by passing it to previously evaluated model.
-Display the new image and its predicted label. (cv2.imshow())
+Display the new image and its predicted label. (*cv2.imshow()*)
 
