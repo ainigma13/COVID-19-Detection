@@ -33,6 +33,9 @@ Plot training loss and accuracy on dataset vs number of epochs.
 Plot the confusion matrix.
 Save the model on disk.
 
+
+
+
 2."gui_covid19.py"
 
 Purpose:To develope a GUI that will use the trained model to predict a new chest X-ray image as COVID-19 or normal.
