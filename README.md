@@ -5,6 +5,7 @@ A Python GUI application based on Tkinter  to detect COVID-19 from normal people
 Purpose:To use tranfer learning method to solve binary classification problem of classifying chest X-ray images as COVID-19 or normal.
 
 CODE description and usage:
+
 i.Load dataset:
 Run the python program in terminal and pass the dataset as command line argument (python train_covid19.py --dataset dataset).
 
@@ -33,6 +34,7 @@ Save the model on disk.
 Purpose:To develope a GUI that will use the trained model to predict a new chest X-ray image as COVID-19 or normal.
 
 CODE description and usage:
+
 i.Image selection:
 Run the python program in terminal and pass the previously saved model as a command line argument (python gui_covid19.py --model covid19.model)
 Press the “Load ” button in the GUI to browse for the location of new chest X-ray image we want to predict.
