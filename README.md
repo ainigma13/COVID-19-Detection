@@ -2,6 +2,7 @@
 A Python GUI application based on Tkinter  to detect COVID-19 from normal people using chest X-ray images
 
 1."train_covid19.py"
+
 Purpose:To use tranfer learning method to solve binary classification problem of classifying chest X-ray images as COVID-19 or normal.
 
 CODE description and usage:
@@ -31,6 +32,7 @@ Plot the confusion matrix.
 Save the model on disk.
 
 2."gui_covid19.py"
+
 Purpose:To develope a GUI that will use the trained model to predict a new chest X-ray image as COVID-19 or normal.
 
 CODE description and usage:
