@@ -33,7 +33,7 @@ Plot training loss and accuracy on dataset vs number of epochs.
 Plot the confusion matrix.
 Save the model on disk.
 
-
+![GUI](https://github.com/ainigma13/COVID-19-Detection/blob/main/pic/COVID-19_Detection.gif)
 
 
 2."gui_covid19.py"
